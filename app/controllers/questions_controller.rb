@@ -1,6 +1,6 @@
 class QuestionsController < ApplicationController
 
-  before_filter :authorize, only: [:edit, :update]
+  before_filter :authorize, only: [:edit, :update, :destroy]
 
 
   def index
@@ -36,6 +36,13 @@ class QuestionsController < ApplicationController
       render :edit
     end
   end
+
+  def destroy
+    @question = Question.find(params[:id])
+    @question.destroy
+    redirect_to questions_path
+  end
+
 
   private
   def question_params
