@@ -7,7 +7,7 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'devise'
+gem 'bcrypt'
 
 group :development do
   gem 'byebug'
