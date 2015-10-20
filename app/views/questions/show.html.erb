@@ -5,6 +5,7 @@
 
 <% @question.answers.each do  |answer| %>
   <h2><%= answer.response %></h2>
+  <p><%= answer.user %></p>
       <%= link_to "Edit", edit_question_answer_path(@question, answer) %> |
       <%= link_to "Delete", question_answer_path(@question, answer),
                                  :data => {:confirm => "Are you sure?",
@@ -22,3 +23,5 @@
 
 <p><%= link_to "Delete", question_path(@question), :data => {:confirm => "You sure?",
                                                          :method => "delete"} %></p>
+<hr>
+<%= link_to "Back to Homepage", root_path %>
