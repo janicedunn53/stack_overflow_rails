@@ -597,11 +597,6 @@
         1,
         1,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
         null
       ],
       "/Users/Guest/Desktop/Stack_overflow_clone/spec/views/sessions/new.html.erb_spec.rb": [
@@ -612,6 +607,6 @@
         null
       ]
     },
-    "timestamp": 1445377129
+    "timestamp": 1445377298
   }
 }
